@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>新闻资讯-保险综合</title>
+	<link rel="stylesheet" href="css/news-guoji.css">
+</head>
+<body>
+	<div class="header">
+		<div class="menus">
+			<div class="menus1">
+				<div class="logo"></div>
+				<b class="titcn">金融 ● 投资</b>
+				<p class="titen">FINANCIAL INVESTMENT</p>
+				<ul class="navigation">
+					<li>
+						<a href="index.html" class="nav" onmouseover="navon()" onmouseout="navout()">
+							<b>网站首页</b>
+							<p>HOME</p>
+						</a>
+					</li>
+					<li>
+						<a href="company.html" class="nav" onmouseover="navon()" onmouseout="navout()">
+							<b>公司简介</b>
+							<p>COMPANY</p>
+						</a>
+					</li>
+					<li>
+						<a href="news-index.html" id="navin">
+							<b>新闻动态</b>
+							<p>NEWS</p>
+						</a>
+					</li>
+					<li>
+						<a href="business.html" class="nav" onmouseover="navon()" onmouseout="navout()">
+							<b>业务种类</b>
+							<p>BUSINESS</p>
+						</a>
+					</li>
+					<li>
+						<a href="message.html" class="nav" onmouseover="navon()" onmouseout="navout()">
+							<b>用户留言</b>
+							<p>MESSAGE</p>
+						</a>
+					</li>
+					<li>
+						<a href="contact.html" class="nav" onmouseover="navon()" onmouseout="navout()">
+							<b>联系我们</b>
+							<p>CONTACT US</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="banner">
+		<ul id="photos">
+			<li><a href="#"><img src="img/663648150531726631.jpg" width="100%" height="472px"></a></li>
+			<li><a href="#"><img src="img/663648150531726631.jpg" width="100%" height="472px"></a></li>
+			<li><a href="#"><img src="img/663648150531726631.jpg" width="100%" height="472px"></a></li>
+			<li><a href="#"><img src="img/663648150531726631.jpg" width="100%" height="472px"></a></li>
+		</ul>
+		<ul id="buttons">
+			<li class="active"><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+		</ul>
+	</div>
+	<div class="news">
+		<div class="tit">
+			<b class="DYN"><p>D</p>YNAMIC NEWS</b>
+			<b class="xinwen">新闻动态</b>
+		</div>
+		<div class="menus">
+			<div class="squareSmallLeft"></div>
+			<div class="squareSmallRight"></div>
+			<div class="squareBigLeft"></div>
+			<div class="squareBigRight"></div>
+			<ul class="selects">
+				<li><a href="news-zhengquan.html" class="sel" onmouseover="selon()" onmouseout="selout()">证券动态</a></li>
+				<li><a href="news-baoxian.html" class="sel" onmouseover="selon()" onmouseout="selout()">保险综合</a></li>
+				<li><a href="news-guoji.html" id="selin">国际经济</a></li>
+			</ul>
+		</div>
+		<div id="page1">
+			<a href="news-japan.html">
+				<span>日本提出未来10年经济增长战略 制定21个项目</span>
+				<p>2014-09-09</p>
+			</a>
+			<a href="news-ouzhong.html">
+				<span>欧中研讨会：双方关系发展与经济全球化联系紧密</span>
+				<p>2014-09-09</p>
+			</a>
+			<a href="news-mogen.html">
+				<span>摩根看好亚洲前景 中国印度内需概念受投资者关注</span>
+				<p>2014-09-02</p>
+			</a>	
+			<a href="news-deyin.html">
+				<span>德银称人民币汇改将推动中国本地需求</span>
+				<p>2014-09-02</p>
+			</a>
+			<a href="news-zhangdejiang.html">
+				<span>张德江视察中国移动巴基斯坦CMPak</span>
+				<p>2014-09-02</p>
+			</a>
+			<a href="news-USA.html">
+				<span>美国“两房”三年缩水达99% 退市重伤股民</span>
+				<p>2014-09-02</p>
+			</a>
+			<a href="news-gelin.html">
+				<span>格林斯潘呼吁控制赤字：美国或很快达借款上限</span>
+				<p>2014-09-02</p>
+			</a>
+			<a href="news-ouzhong.html">
+				<span>欧中研讨会：双方关系发展与经济全球化联系紧密</span>
+				<p>2014-09-02</p>
+			</a>
+		</div>
+		<div id="page2">
+			<a href="news-japan.html">
+				<span>日本提出未来10年经济增长战略 制定21个项目</span>
+				<p>2014-09-02</p>
+			</a>
+			<a href="news-mogen.html">
+				<span>摩根看好亚洲前景 中国印度内需概念受投资者关注</span>
+				<p>2014-09-09</p>
+			</a>
+		</div>
+		<div class="pages">
+			<a href="#" id="first" onclick="Pone()">首页</a>
+			<a href="#" id="before" onclick="Pbefore()">&lt;上一页</a>
+			<a href="#" id="one" class="checked" onclick="Pone()">1</a>
+			<a href="#" id="two" onclick="Ptwo()">2</a>
+			<a href="#" id="after" onclick="Pafter()">下一页&gt;</a>
+			<a href="#" id="last" onclick="Ptwo()">末页</a>
+		</div>
+	</div>
+	<div class="foot">
+		<div class="foot_wid">
+			<div class="foot_wid_left">
+				<span>24</span>
+				<p class="foot_p1">小时免费热线</p>
+				<p class="foot_p2">021-123456X8</p>
+				<i></i>
+			</div>
+			<div class="foot_wid_right">
+				<div class="foot_wid_right_top">
+					<ul>
+						<li><a href="index.html">网站首页</a></li>
+						<li><a href="company.html">公司简介</a></li>
+						<li><a href="news-index.html">新闻动态</a></li>
+						<li><a href="business.html">业务种类</a></li>
+						<li><a href="message.html">用户留言</a></li>
+						<li><a href="contact.html">联系我们</a></li>
+					</ul>
+				</div>
+				<div class="foot_wid_right_cent">地址：上海市XX区XX路XX号XX栋</div>
+				<p class="foot_p1">Copyright ? 2009-2011,www.xxxxxx.com,All rights reserved  版权所有 </p>
+				<p>沪ICP备XXXXXX号 </p>
+				<p>电话：021-123456X8</p>
+				<p>传真：021-123456X8</p>
+				<p>地址：上海市XX区XX路XX号XX栋</p>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/news-guoji.js"></script>
+</body>
+</html>

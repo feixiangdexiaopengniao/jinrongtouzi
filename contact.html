@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>金融投资业务</title>
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+</head>
+<body>
+	<div class="header">
+		<div class="menus">
+			<div class="menus1">
+				<div class="logo"></div>
+				<b class="titcn">金融 ● 投资</b>
+				<p class="titen">FINANCIAL INVESTMENT</p>
+				<ul class="navigation">
+					<li>
+						<a href="index.html" class="nav" onmouseover="navon()" onmouseout="navout()">
+							<b>网站首页</b>
+							<p>HOME</p>
+						</a>
+					</li>
+					<li>
+						<a href="company.html" class="nav" onmouseover="navon()" onmouseout="navout()">
+							<b>公司简介</b>
+							<p>COMPANY</p>
+						</a>
+					</li>
+					<li>
+						<a href="news-index.html" class="nav" onmouseover="navon()" onmouseout="navout()">
+							<b>新闻动态</b>
+							<p>NEWS</p>
+						</a>
+					</li>
+					<li>
+						<a href="business.html" class="nav" onmouseover="navon()" onmouseout="navout()">
+							<b>业务种类</b>
+							<p>BUSINESS</p>
+						</a>
+					</li>
+					<li>
+						<a href="message.html" class="nav" onmouseover="navon()" onmouseout="navout()">
+							<b>用户留言</b>
+							<p>MESSAGE</p>
+						</a>
+					</li>
+					<li>
+						<a href="contact.html" id="navin">
+							<b>联系我们</b>
+							<p>CONTACT US</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="banner">
+		<ul id="photos">
+			<li><a href="#"><img src="img/663648150531726631.jpg" width="100%" height="472px"></a></li>
+			<li><a href="#"><img src="img/663648150531726631.jpg" width="100%" height="472px"></a></li>
+			<li><a href="#"><img src="img/663648150531726631.jpg" width="100%" height="472px"></a></li>
+			<li><a href="#"><img src="img/663648150531726631.jpg" width="100%" height="472px"></a></li>
+		</ul>
+		<ul id="buttons">
+			<li class="active"><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+		</ul>
+	</div>
+	<div class="product">
+		<div class="product_cent">
+			<p>C</p>
+			<p>ONTACT US</p>
+		</div>
+		<span>联系我们</span>
+	</div>
+	<div class="contact_map">
+		<i></i>
+		<p class="p1">地址：上海市XX区XX路XX广场X栋XX号</p>
+		<p class="p2">Address: Shanghai City District XX square X XX XX Road No. XX</p>
+		<span class="p3">TELEPHONE</span>
+		<p class="p4">021-123456X8/123456X8</p>
+		<span class="p5">EMAIL</span>
+		<p class="p6">moumou@xxx.com</p>
+	</div>
+	<div id="dituContent"></div>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+	<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(116.395645,39.929986);//定义一个中心点坐标
+        map.centerAndZoom(point,12);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+  var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+  map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+  var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+  map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+  var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+  map.addControl(ctrl_sca);
+    }
+    
+    
+    initMap();//创建和初始化地图
+</script>
+<span class="cont_span1">品质至上，诚信为重，用心服务，我们真诚与您合作，<P>竭诚为您服务！</P></span>
+<span class="cont_span2">QUALITY FIRST, INTEGRITY ORIENTED, HARD SERVICE, WE SINCERELY COOPERATE WITH YOU, FOR YOUR DEDICATED SERVICE!</span>
+<div class="foot">
+		<div class="foot_wid">
+			<div class="foot_wid_left">
+				<span>24</span>
+				<p class="foot_p1">小时免费热线</p>
+				<p class="foot_p2">021-123456X8</p>
+				<i></i>
+			</div>
+			<div class="foot_wid_right">
+				<div class="foot_wid_right_top">
+					<ul>
+						<li><a href="index.html">网站首页</a></li>
+						<li><a href="company.html">公司简介</a></li>
+						<li><a href="news-index.html">新闻动态</a></li>
+						<li><a href="business.html">业务种类</a></li>
+						<li><a href="message.html">用户留言</a></li>
+						<li><a href="contact.html">联系我们</a></li>
+					</ul>
+				</div>
+				<div class="foot_wid_right_cent">地址：上海市XX区XX路XX号XX栋</div>
+				<p class="foot_p1">Copyright ? 2009-2011,www.xxxxxx.com,All rights reserved  版权所有 </p>
+				<p>沪ICP备XXXXXX号 </p>
+				<p>电话：021-123456X8</p>
+				<p>传真：021-123456X8</p>
+				<p>地址：上海市XX区XX路XX号XX栋</p>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/contact.js"></script>
+</div>
+</body>
+</html>
